@@ -1,0 +1,26 @@
+{% extends "post/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+    <h1>{{ event.title }}</h1>
+    <div class="event-details">
+        <p><strong>Description:</strong> {{ event.description }}</p>
+        <p><strong>Location:</strong> {{ event.location }}</p>
+        <p><strong>Start Time:</strong> {{ event.start_time }}</p>
+        <p><strong>End Time:</strong> {{ event.end_time }}</p>
+    </div>
+    <h3>RSVP Status</h3>
+    {% if rsvp %}
+        <p>Your RSVP: <strong>{{ rsvp.get_status_display }}</strong></p>
+    {% else %}
+        <p>You have not RSVP'd to this event yet.</p>
+    {% endif %}
+    <h3>RSVP for this event</h3>
+    <form method="POST" action="{% url 'rsvp_event' event.id %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit RSVP</button>
+    </form>
+    <a href="{% url 'event_list' %}">Back to Events List</a>
+</div>
+{% endblock content %}

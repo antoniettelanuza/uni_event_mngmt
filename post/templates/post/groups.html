@@ -1,0 +1,75 @@
+{% extends "post/base.html" %}
+{% block content %}
+<!-- MAIN CONTENT -->
+<div class="container mt-5">
+    <!-- Section Title -->
+    <h2 class="text-center mb-5 text-primary">Organizational And Departmental Groups</h2>
+    
+    <!-- Group 1: BSIT-3 -->
+    <div class="card mb-4 shadow-sm rounded">
+        <div class="card-body text-center">
+            <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/465970186_122174726102091847_3750425698383676180_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHKEMppB1W1z0bSxjYS8C8KXnYHNhxMIKledgc2HEwgqe4k_M59RF7cP5Q1Ez96T5J4nnSr3mwUdVBTrGNdBq9c&_nc_ohc=4ZokdyyN2nkQ7kNvgHw2rqN&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=AyiSNhcJJHMfGpeludBP6mJ&oh=00_AYDaBwi5O_VS6bLLjLCMD1ba5LO4LYsSnmr6mNYuWFeJdA&oe=673BD77F" class="img-fluid rounded" alt="BSIT-3 Group Image">
+            <h2 class="mt-3">BSIT-3 GROUP</h2>
+            <p class="text-muted">The BSIT-3 Group is a dynamic community of students focused on exploring the latest trends and technologies in the field of Information Technology. This group serves as a collaborative platform for discussing various IT-related topics, from programming languages to network security, and providing support for academic projects. Together, we aim to enhance our technical skills, share knowledge, and prepare for real-world challenges in the tech industry.</p>
+        </div>
+    </div>
+
+    <!-- Group 2: SPUSurigao - Junior Philippine Institute of Accountants -->
+    <div class="card mb-4 shadow-sm rounded">
+        <div class="card-body text-center">
+            <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/395392532_746057214233598_5304343513066875199_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEp2zv8GgIhujyezWNqZN0_ktCMKV-Qn4SS0IwpX5CfhGRSW8RZbdCQ4-vD4Ct2EzdrhapbSQsLAze_PPdEnbTJ&_nc_ohc=PO6QsS3q17wQ7kNvgELa0KS&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=ANLwaEhlB7IN3VxPvE5CwXL&oh=00_AYC-_Ild4NT2XUpG4MbgzIicodz2BMdqP4Q9ivqxDilYTg&oe=673BF057" class="img-fluid rounded" alt="SPUSurigao JPIA Image">
+            <h2 class="mt-3">SPUSurigao - Junior Philippine Institute of Accountants</h2>
+            <p class="text-muted">The Junior Philippine Institute of Accountants (JPIA) is a prestigious organization dedicated to the development and enhancement of future accountants. Through collaboration, learning, and various events, the group prepares its members for successful careers in the field of accounting and finance.</p>
+        </div>
+    </div>
+
+    <!-- Post Form -->
+    <div class="card mb-4 shadow-sm rounded">
+        <div class="card-body">
+            <h5>What's on your mind?</h5>
+            <form>
+                <div class="form-group">
+                    <textarea class="form-control rounded" rows="3" placeholder="Write something..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Post</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Posts Section -->
+    <h4 class="text-center mb-4">Recent Posts</h4>
+    <div class="list-group mb-4">
+        <!-- Post 1 -->
+        <div class="list-group-item shadow-sm rounded">
+            <h5 class="mb-1">User 1</h5>
+            <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/465970186_122174726102091847_3750425698383676180_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHKEMppB1W1z0bSxjYS8C8KXnYHNhxMIKledgc2HEwgqe4k_M59RF7cP5Q1Ez96T5J4nnSr3mwUdVBTrGNdBq9c&_nc_ohc=4ZokdyyN2nkQ7kNvgHw2rqN&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=AyiSNhcJJHMfGpeludBP6mJ&oh=00_AYDaBwi5O_VS6bLLjLCMD1ba5LO4LYsSnmr6mNYuWFeJdA&oe=673BD77F" class="img-fluid rounded" alt="BSIT-3 Group Image">
+            <p class="mb-1">This is the content of the first post. Everyone should check this out!</p>
+            <small>Posted on October 26, 2024</small>
+            <div class="mt-2">
+                <a href="#" class="btn btn-link">Comment</a>
+                <a href="#" class="btn btn-link">Like</a>
+            </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="list-group-item shadow-sm rounded">
+            <h5 class="mb-1">User 2</h5>
+            <p class="mb-1">Here’s another interesting topic for discussion.</p>
+            <small>Posted on October 25, 2024</small>
+            <div class="mt-2">
+                <a href="#" class="btn btn-link">Comment</a>
+                <a href="#" class="btn btn-link">Like</a>
+            </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="list-group-item shadow-sm rounded">
+            <h5 class="mb-1">User 3</h5>
+            <p class="mb-1">Don't forget about the upcoming event next week!</p>
+            <small>Posted on October 24, 2024</small>
+            <div class="mt-2">
+                <a href="#" class="btn btn-link">Comment</a>
+                <a href="#" class="btn btn-link">Like</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
